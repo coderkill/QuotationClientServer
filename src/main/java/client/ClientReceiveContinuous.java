@@ -7,7 +7,7 @@ import java.io.*;
 import java.net.InetAddress;
 import java.net.Socket;
 
-public class ClientRecieveContinous {
+public class ClientReceiveContinuous {
 
     public static void main(String[] args) throws IOException {
         InetAddress address = InetAddress.getLocalHost(); //FOR Showing local address
@@ -30,7 +30,6 @@ public class ClientRecieveContinous {
         }
 
         System.out.println("Client Address : " + address);
-        System.out.println("Enter Symbol to echo Server ( Enter QUIT to end):");
 
         try {
             while (true) {

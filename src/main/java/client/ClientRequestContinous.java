@@ -21,7 +21,7 @@ public class ClientRequestContinous {
         ObjectInput objectInput = null;
 
         try {
-            socket = ConnectUtil.keepConnecting(addressLocal, 4449);
+            socket = ConnectUtil.keepConnecting(addressLocal, 4445);
             inputStream = socket.getInputStream();
             objectInput = new ObjectInputStream(inputStream);
             bufferedReader = new BufferedReader(new InputStreamReader(System.in));

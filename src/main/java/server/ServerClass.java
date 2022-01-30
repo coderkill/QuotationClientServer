@@ -90,7 +90,7 @@ class ServerThread extends Thread {
                 System.out.println("Connection Closing..");
                 if (is != null) {
                     is.close();
-                    System.out.println(" Socket Input Stream Closed");
+                    System.out.println("Socket Input Stream Closed");
                 }
 
                 if (os != null) {

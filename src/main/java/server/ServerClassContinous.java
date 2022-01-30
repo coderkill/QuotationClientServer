@@ -94,7 +94,7 @@ class ServerThreadContinous extends Thread {
                 System.out.println("Connection Closing..");
                 if (is != null) {
                     is.close();
-                    System.out.println(" Socket Input Stream Closed");
+                    System.out.println("Socket Input Stream Closed");
                 }
 
                 if (os != null) {
@@ -105,10 +105,6 @@ class ServerThreadContinous extends Thread {
                     s.close();
                     System.out.println("Socket Closed");
                 }
-                if (objectOutput != null) {
-                    objectOutput.close();
-                }
-
             } catch (IOException ie) {
                 System.out.println("Socket Close Error");
             }
